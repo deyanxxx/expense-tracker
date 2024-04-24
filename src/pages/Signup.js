@@ -1,5 +1,6 @@
 import React from 'react';
 import signupBanner from '../assets/signupBanner.svg';
+import { FcGoogle } from "react-icons/fc";
 
 
 function Signup() {
@@ -32,8 +33,12 @@ function Signup() {
           </div>
           <div className='flex flex-row'>
             <div className='my-5 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-zinc-800 after:mt-0.5 after:flex-1 after:border-t after:border-zinc-800 before:border-' />
-            <p className="mx-4 mt-4 text-center font-medium text-sm text-zinc-500">Or</p>
+            <p className="mx-4 mt-4 text-center font-normal text-sm text-zinc-800">Or</p>
           </div>
+          <button className='flex flex-row items-center justify-center rounded-md mt-2 border-2 px-16 py-2 text-white font-semibold border-zinc-500'>
+            <FcGoogle className='mr-2' />
+            <span className='text-zinc-500'>Continue with Google</span>
+          </button>
       </div>
     </div>
   )
