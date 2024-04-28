@@ -5,38 +5,39 @@ import { FcGoogle } from "react-icons/fc";
 
 function Signup() {
   return (
-    <div className='flex flex-row h-screen justify-between items-center'>
-      <div className='items-center justify-center h-screen m-auto'>
-      <img src={signupBanner} className='w-92 h-80' alt='signupBanner' />
+    <div className='flex flex-row h-screen'>
+      <div className='flex h-full items-center justify-center'>
+        <img src={signupBanner} alt='signupBanner' />
       </div>
-      <div className='bg-white w-1/2 h-full flex flex-col items-center justify-center'>
-        <h1 className='font-semibold text-3xl' style={{ color: '#273469' }}>Create an Account</h1>
-        <div className='flex flex-row mb-8 mt-2'>
-          <h5 className='text-sm'>Already have an Account?<span style={{ color: '#273469' }}> Log in </span></h5>
+      <div className='bg-white w-[50%] h-full flex flex-col items-center justify-center space-y-8'>
+        <h1 className='font-semibold text-5xl' style={{ color: '#273469' }}>Create an Account</h1>
+        <div className='flex flex-row'>
+          <h5 className='text-xl'>Already have an Account?<span style={{ color: '#273469' }}> Log in </span></h5>
         </div>
         <input type="email" name="email" 
-        class="mt-1 mb-1 px-3 py-2 w-80 bg-white border shadow-sm border-slate-300 placeholder-slate-400 
+        class="p-2 w-[35%] bg-white border shadow-sm border-slate-300 placeholder-slate-400 
         focus:outline-none focus:border-sky-500 focus:ring-sky-500 block  rounded-md sm:text-sm focus:ring-1" 
         placeholder="Email address" />
         <input type="email" name="email" 
-        class="mt-1 mb-4 px-3 py-2 w-80 bg-white border shadow-sm border-slate-300 placeholder-slate-400 
+        class="p-2 w-[35%] bg-white border shadow-sm border-slate-300 placeholder-slate-400 
         focus:outline-none focus:border-sky-500 focus:ring-sky-500 block rounded-md sm:text-sm focus:ring-1" 
         placeholder="Password" />
-          <button style={{ backgroundColor: '#273469', borderColor: '#273469'}} className='rounded-md border-2 px-32 py-2 text-white font-semibold
-           m-4'>
+          <button style={{ backgroundColor: '#273469', borderColor: '#273469'}} className='rounded-md border-2 text-white font-semibold w-[35%] p-2'>
             Sign Up
           </button>
-          <div className='flex flex-row'>
-            <input type="checkbox" class="default:ring-2 mr-2" />
-            <h5 className='text-xs '>I agree to the <span style={{ color: '#273469' }}> Privacy Policy </span> and  
+           <div className='flex flex-row space-x-2 items-center'>
+           <input type="checkbox" style={{ height: '20px', width: '20px' }} />
+            <h5 className='text-md'>I agree to the <span style={{ color: '#273469' }}> Privacy Policy </span> and  
             <span style={{ color: '#273469' }}> Terms of Service </span></h5>
           </div>
-          <div className='flex flex-row'>
-            <div className='my-5 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-zinc-800 after:mt-0.5 after:flex-1 after:border-t after:border-zinc-800 before:border-' />
-            <p className="mx-4 mt-4 text-center font-normal text-sm text-zinc-800">Or</p>
+          <div className='flex flex-row items-center space-x-2'>
+            <div className='h-[1px] w-full bg-black' style={{ whiteSpace: 'pre-wrap' }}>                         </div>
+              <p className="text-center font-normal text-md text-zinc-800">Or</p>
+            <div className='h-[1px] w-full bg-black' style={{ whiteSpace: 'pre-wrap' }}>                                                            </div>
+
           </div>
-          <button className='flex flex-row items-center justify-center rounded-md mt-2 border-2 px-16 py-2 text-white font-semibold border-zinc-500'>
-            <FcGoogle className='mr-2' />
+          <button className='flex flex-row items-center justify-center rounded-md border-2 text-white font-semibold w-[35%] p-2 border-zinc-500 space-x-2'>
+            <FcGoogle style={{ height: '20px', width: '20px' }}/>
             <span className='text-zinc-500'>Continue with Google</span>
           </button>
       </div>
