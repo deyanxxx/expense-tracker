@@ -11,25 +11,22 @@ module.exports = {
       ],
     }]
   },
+  
   theme: {
     screens: {
+
       'xs': {'min':'320px', 'max':'639px'},
-      // => @media (min-width: 320px & max-width: 639px) { ... }
+      // => @media (min-width: 640px & max-width: 766px) { ... } small mobile
 
-      'sm': {'min':'640px', 'max':'767px'},
-      // => @media (min-width: 640px & max-width: 766px) { ... }
+      'sm': {'min':'640px', 'max':'759px'},
+      // => @media (min-width: 640px & max-width: 759px) { ... } mobile
 
-      'md': {'min':'768px', 'max':'1023px'},
-      // => @media (min-width: 768px & max-width: 1023px) { ... }
+      'md': {'min':'760px'},
+      // => @media (min-width: 760px) { ... } tablet
 
-      'lg': {'min':'1024px', 'max':'1279px'},
-      // => @media (min-width: 1024px & max-width: 1279px) { ... }
+      'lg': {'min':'1024px'},
+      // => @media (min-width: 1024px) { ... } desktop and larger
 
-      'xl': {'min':'1280px', 'max':'1532px'},
-      // => @media (min-width: 1280px & max-width: 1532px) { ... }
-
-      '2xl': {'min': '1536px'},
-      // => @media (min-width: 1536px) { ... }
     },
     extend: {},
   },
