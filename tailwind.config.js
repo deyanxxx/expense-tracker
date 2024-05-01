@@ -15,13 +15,13 @@ module.exports = {
   theme: {
     screens: {
 
-      'xs': {'min':'320px', 'max':'639px'},
+      'xs': {'max':'639px'},
       // => @media (min-width: 640px & max-width: 766px) { ... } small mobile
 
       'sm': {'min':'640px', 'max':'759px'},
       // => @media (min-width: 640px & max-width: 759px) { ... } mobile
 
-      'md': {'min':'760px'},
+      'md': {'min':'760px', 'max':'1023px'},
       // => @media (min-width: 760px) { ... } tablet
 
       'lg': {'min':'1024px'},

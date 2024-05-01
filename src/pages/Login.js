@@ -6,27 +6,33 @@ import { Checkbox, FormControlLabel, FormGroup, Typography } from '@mui/material
 function Login() {
 
   return (
-    <div className='flex flex-row h-screen'>
-      <div className='flex items-center justify-center w-[50%]'>
-      <img src={homeBanner} className='w-92 h-80' alt='homeBanner' />
+    <div className='flex flex-row h-screen xs:flex-col xs:items-center md:flex-col md:items-center'>
+      <div className='flex items-center justify-center w-[50%] xs:h-[40%] md:h-[40%]'>
+        <img src={homeBanner} 
+        className='w-80 h-80 xs:w-full xs:h-[70%] md:w-full md:p-8' alt='signupBanner' />
       </div>
-      <div className='bg-white w-[50%] h-full flex flex-col items-center justify-center space-y-4'>
-        <div className='flex flex-col items-center justify-center m-8'>
-          <h1 className='font-semibold text-5xl' style={{ color: '#273469' }}>Welcome back!</h1>
-          <h5 className='text-l mt-2'>Don't have an Account yet?<span style={{ color: '#273469' }}> Sign up Now </span></h5>
-        </div>
-        <input type="email" name="email" 
-          class="p-2 w-[50%] bg-white border shadow-sm border-slate-300 placeholder-slate-400 
-          focus:outline-none focus:border-sky-500 focus:ring-sky-500 block rounded-md sm:text-sm focus:ring-1" 
+      <div className='bg-white w-[50%] h-full flex flex-col items-center justify-center space-y-2
+        xs:w-[100%] xs:h-full xs:space-y-2 md:w-[100%]'>
+        <div className='flex flex-col items-center justify-center space-y-4'>
+          <h1 style={{ color: '#273469' }} 
+            className='font-semibold text-5xl xs:text-3xl' >Welcome Back</h1>
+          <h5 className='text-l xs:text-sm '>Don't have an account yet?<span style={{ color: '#273469' }}> Sign up Now </span></h5>
+          <input type="email" name="email" 
+            className="p-2 w-[100%] bg-white border shadow-sm border-slate-300 placeholder-slate-400 
+            focus:outline-none focus:border-sky-500 focus:ring-sky-500 block rounded-md sm:text-sm focus:ring-1
+            xs:w-full" 
           placeholder="Email address" />
-        <input type="email" name="email" 
-          class="p-2 w-[50%] bg-white border shadow-sm border-slate-300 placeholder-slate-400 
-          focus:outline-none focus:border-sky-500 focus:ring-sky-500 block rounded-md sm:text-sm focus:ring-1" 
+          <input type="password" name="password" 
+            className="p-2 w-[100%] bg-white border shadow-sm border-slate-300 placeholder-slate-400 
+            focus:outline-none focus:border-sky-500 focus:ring-sky-500 block rounded-md sm:text-sm focus:ring-1
+            xs:w-full" 
           placeholder="Password" />
-        <button style={{ backgroundColor: '#273469', borderColor: '#273469'}} 
-          className='rounded-md border-2 text-white font-semibold w-[50%] p-2'>
-          Log In
-        </button>
+          <button style={{ backgroundColor: '#273469', borderColor: '#273469'}} 
+            className='rounded-md border-2 text-white font-semibold w-[100%] p-2
+            xs:w-full'>
+            Sign Up
+          </button>
+        </div>
           <div className='flex flex-row space-x-20 items-center justify-center'>
             <FormGroup>
               <FormControlLabel control={<Checkbox size='small'/>} 
