@@ -1,9 +1,16 @@
 import React from 'react';
 import homeBanner from '../assets/homeBanner.svg';
 import { Checkbox, FormControlLabel, FormGroup, Typography } from '@mui/material';
+import { useNavigate } from "react-router-dom";
 
 
 function Login() {
+
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    navigate('/Overview');
+  };
 
   return (
     <div className='flex flex-row h-screen xs:flex-col xs:items-center md:flex-col md:items-center'>
@@ -29,8 +36,9 @@ function Login() {
           placeholder="Password" />
           <button style={{ backgroundColor: '#273469', borderColor: '#273469'}} 
             className='rounded-md border-2 text-white font-semibold w-[100%] p-2
-            xs:w-full'>
-            Sign Up
+            xs:w-full'
+            onClick={handleLogin}>
+            Log In
           </button>
         </div>
           <div className='flex flex-row space-x-20 items-center justify-center'>

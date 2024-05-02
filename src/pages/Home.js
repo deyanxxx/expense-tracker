@@ -12,6 +12,8 @@ function Home() {
 
   const handleSignup = () => {
     navigate('/Signup');
+
+    
   };
 
   return (
